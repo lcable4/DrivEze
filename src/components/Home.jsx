@@ -16,14 +16,21 @@ const Home = () => {
               The rental car industry has been stagnant for over 60 years, lets
               change that.
             </h3>
-            <img className="carLotImg" src="./images/car-rental.jpeg" alt="car lot"></img>
-            <p id="imgBlurb">This photo was taken in late 2022 and it marks the completion of our latest hub: Denver, Co</p>
+            <img
+              className="carLotImg"
+              src="./images/car-rental.jpeg"
+              alt="car lot"
+            ></img>
+            <p id="imgBlurb">
+              This photo was taken in late 2022 and it marks the completion of
+              our latest hub: Denver, Co
+            </p>
           </div>
-            <Link to="/vehicleList" className="homePageLink">
-              <button class="homePageButtons" role="button">
-                View Available Cars
-              </button>
-            </Link>
+          <Link to="/vehicleList" className="homePageLink">
+            <button className="homePageButtons" role="button">
+              View Available Cars
+            </button>
+          </Link>
         </div>
       </div>
       <div className="homePageRight">
@@ -40,11 +47,11 @@ const Home = () => {
               <img className="mapImg" src="./images/map.png" alt="map" />
             </div>
           </div>
-            <Link to="/locations" className="homePageLink">
-              <button class="homePageButtons" role="button">
-                View Locations
-              </button>
-            </Link>
+          <Link to="/locations" className="homePageLink">
+            <button className="homePageButtons" role="button">
+              View Locations
+            </button>
+          </Link>
         </div>
         <div id="welcome-section-about">
           <div id="welcome-about">
@@ -59,11 +66,11 @@ const Home = () => {
               <img className="aboutImg" src="./images/info.png" alt="map" />
             </div>
           </div>
-            <Link to="/about" className="homePageLink">
-              <button class="homePageButtons" role="button">
-                Read More
-              </button>
-            </Link>
+          <Link to="/about" className="homePageLink">
+            <button className="homePageButtons" role="button">
+              Read More
+            </button>
+          </Link>
         </div>
       </div>
     </main>

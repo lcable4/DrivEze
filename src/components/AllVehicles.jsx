@@ -164,7 +164,7 @@ function AllVehicles(props) {
                 </div>
                 <div id="addToCartButton">
                   <button
-                    class="allVehiclesButtons"
+                    className="allVehiclesButtons"
                     role="button"
                     onClick={() => {
                       addVehicleToCart(

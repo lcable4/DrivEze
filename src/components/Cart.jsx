@@ -92,12 +92,12 @@ function Cart() {
               <h4 className="cartTotalText">Total: ${totalSum}</h4>
               {totalSum ? (
                 <Link to="/checkout" state={{ totalSum: totalSum }}>
-                  <button class="button-92" role="button">
+                  <button className="button-92" role="button">
                     Checkout
                   </button>
                 </Link>
               ) : (
-                <button class="button-92" role="button">
+                <button className="button-92" role="button">
                   Checkout
                 </button>
               )}

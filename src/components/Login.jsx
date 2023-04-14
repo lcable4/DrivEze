@@ -17,7 +17,7 @@ const Login = (props) => {
       return;
     }
     const result = await loginUser(user, password);
-
+    console.log(result, "RESULT LOG");
     if (result.token) {
       props.handleLogin(true);
       setSubmitMessage(`Logged in as ${user}`);
@@ -29,7 +29,7 @@ const Login = (props) => {
       localStorage.setItem(`cart login ${user}`, JSON.stringify(cart));
       navigate("/");
     } else {
-      alert("Error: " + result);
+      alert("Error: " + result.message);
     }
   };
 

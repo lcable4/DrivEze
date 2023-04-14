@@ -475,26 +475,27 @@ h5 {
   #about-container {
     padding-top: 150px;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 350px) {
   #welcome-section,
-  #welcome-section-about{
+  #welcome-section-about {
     min-width: 300px;
-    height:auto;
+    height: auto;
   }
-  #welcome-section-locations{
+  #welcome-section-locations {
     margin-top: 70px;
     min-width: 300px;
-    height:auto;
+    height: auto;
   }
 }
 .homePageText {
   font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
     sans-serif;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 .homeHeaders {
   margin: 5px;
@@ -564,7 +565,7 @@ h5 {
   margin: 20px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
   overflow-y: scroll;
 }
 .allVehiclesBottomCartDiv {
@@ -707,13 +708,12 @@ h5 {
   width: 100%;
   text-align: center;
 }
-#back-button-loc{
+#back-button-loc {
   text-decoration: none;
   text-align: center;
   color: black;
-  
 }
-#back-button{
+#back-button {
   text-decoration: none;
   text-align: center;
   color: black;
@@ -979,7 +979,7 @@ h5 {
 #checkoutBtn:hover {
   box-shadow: rgba(214, 40, 57, 2) 0 3px 8px;
 }
-#admin-car-header{
+#admin-car-header {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -987,51 +987,51 @@ h5 {
   flex-direction: column;
 }
 
-#addCarBtn{
+#addCarBtn {
   background-color: black;
   color: white;
   border-radius: 25px;
-  width:50px;
+  width: 50px;
   display: flex;
   align-self: center;
   margin-left: 46%;
 }
-#addCarsBtn{
+#addCarsBtn {
   background-color: black;
   color: white;
   border-radius: 25px;
-  width:8%;
+  width: 8%;
   display: flex;
   align-self: center;
 }
-#adminInv{
+#adminInv {
   display: flex;
   justify-content: center;
 }
-#admin-location{
+#admin-location {
   display: flex;
   justify-content: center;
 }
-#button{
+#button {
   background-color: black;
   color: white;
   border-radius: 25px;
 }
-#admin-hello{
+#admin-hello {
   text-align: center;
 }
-#editForm{
+#editForm {
   background-color: #d62839;
   border-radius: 25px;
-  padding:10px;
-  width:160px;
+  padding: 10px;
+  width: 160px;
 }
-#new-car-form{
+#new-car-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#hub-form{
+#hub-form {
   background-color: #80808099;
   border-radius: 30px;
   text-align: center;
@@ -1042,4 +1042,3 @@ h5 {
   width: 200px;
   box-shadow: 10px 10px 5px black;
 }
-

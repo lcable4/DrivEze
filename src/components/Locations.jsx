@@ -5,7 +5,7 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 function AllHubs(props) {
   const [hubs, setHubs] = useState([]);
-  
+
   useEffect(() => {
     async function getHubs() {
       const hub = await getAllHubs();
@@ -60,7 +60,7 @@ function AllHubs(props) {
 
 function Map(props) {
   const mapContainerStyle = {
-    width: "47%",
+    width: "90%",
     height: "85%",
     margin: "25px",
   };
@@ -75,6 +75,7 @@ function Map(props) {
   // Use the props.hubs list to render markers on the map.
   return (
     <GoogleMap
+      mapContainerClassName="map"
       mapContainerStyle={mapContainerStyle}
       zoom={zoom}
       center={center}

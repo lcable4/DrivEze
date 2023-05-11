@@ -133,7 +133,7 @@ body {
 }
 .profileDiv {
   border-radius: 25px;
-  width: 350px;
+  width: 50%;
   height: 80%;
   margin: 10px;
   display: flex;
@@ -237,7 +237,7 @@ body {
   border: 1px solid black;
   border-radius: 25px;
   height: 70%;
-  width: 300px;
+  width: 80%;
   /* min-width: 300px; */
   display: flex;
   flex-direction: column;
@@ -1010,6 +1010,66 @@ h5 {
   width: 200px;
   box-shadow: 10px 10px 5px black;
 }
+@media only screen and (max-width: 1180px) {
+  .homePageLeft,
+  .homePageRight {
+    width: 100%;
+  }
+  #welcome-desc h3 {
+    font-size: 30px;
+  }
+  #imgBlurb {
+    font-size: 20px;
+  }
+  .homePageLink {
+    width: 25%;
+  }
+  .homePageButtons,
+  .allVehiclesButtons,
+  .hubInventoryButtons,
+  .editProfileBtn,
+  .nav-buttons {
+    font-size: 20px;
+  }
+  .allVehiclesPage {
+    width: 100%;
+  }
+  .allVehiclesTopDiv {
+    height: 100px;
+  }
+  .vehicleListing {
+    width: 95%;
+  }
+  .vehicleDescription h3 {
+    font-size: 25px;
+  }
+  .vehicleDescription h4 {
+    font-size: 20px;
+  }
+  .profileDiv,
+  .profileDetails {
+    width: 90%;
+  }
+  .profileDetails h4 {
+    font-size: 30px;
+  }
+  .profileDetails h5 {
+    font-size: 20px;
+  }
+  .locationsContainer {
+    flex-direction: column;
+  }
+  #hubs {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 915px) {
+  .vehicleListing {
+    flex-direction: row;
+    max-height: fit-content;
+    width: 90%;
+  }
+}
 @media only screen and (max-width: 840px) {
   .home-page,
   #about-container {
@@ -1017,6 +1077,11 @@ h5 {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+  #welcome-section,
+  #welcome-section-locations,
+  #welcome-section-about {
+    min-width: auto;
   }
 }
 
@@ -1029,7 +1094,10 @@ h5 {
   }
   .homePageLeft,
   .homePageRight {
-    width: 90%;
+    width: 100%;
+  }
+  .homePageLink {
+    width: 60%;
   }
   #register-form {
     width: 90%;
@@ -1043,10 +1111,22 @@ h5 {
   .map {
     display: none;
   }
+  .allVehiclesTopDiv {
+    height: auto;
+  }
+  .allVehiclesBottomDiv {
+    width: 100%;
+  }
   .vehicleListing {
     flex-direction: column;
     max-height: fit-content;
     width: 90%;
+  }
+  .vehicleDescription h3 {
+    font-size: 20px;
+  }
+  .vehicleDescription h4 {
+    font-size: 15px;
   }
   .vehicleImg {
     width: 80%;
